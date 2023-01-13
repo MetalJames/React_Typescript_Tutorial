@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 
-export const LoggedIn = () => {
+type ContainerProps = {
+    styles: React.CSSProperties
+}
+
+export const LoggedIn = (props: ContainerProps) => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -13,9 +17,12 @@ export const LoggedIn = () => {
         setIsLoggedIn(false)
     }
     return (
-        <div>
-            <button onClick={handleLogin}>Login</button>
-            <button onClick={handleLogout}>Logout</button>
+        <div style={props.styles}>
+            <div>
+                <button onClick={handleLogin}>Login</button>&nbsp;&#160;
+                <button onClick={handleLogout}>Logout</button>
+            </div>
+            <br />
             <div>User is { isLoggedIn ? 'logged in' : 'logged out' }</div>
         </div>
     )

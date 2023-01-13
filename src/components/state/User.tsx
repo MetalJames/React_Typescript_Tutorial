@@ -5,7 +5,11 @@ type AuthUser = {
     email: string
 }
 
-export const User = () => {
+type ContainerProps = {
+    styles: React.CSSProperties
+}
+
+export const User = (props: ContainerProps) => {
     const [user, setUser] = useState<AuthUser | null>(null)
     const handleLogin = () => {
         setUser({
@@ -17,10 +21,14 @@ export const User = () => {
         setUser(null)
     }
     return (
-        <div>
-            <button onClick={handleLogin}>Login</button>
-            <button onClick={handleLogout}>Logout</button>
+        <div style={props.styles}>
+            <div>
+                <button onClick={handleLogin}>Login</button>&nbsp;&#160;
+                <button onClick={handleLogout}>Logout</button>
+            </div>
+            <br />
             <div>User name is { user?.name}</div>
+            <br />
             <div>User email is {user?.email}</div>
         </div>
     )

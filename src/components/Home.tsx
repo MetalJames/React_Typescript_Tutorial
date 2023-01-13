@@ -6,7 +6,8 @@ const Home = () => {
         <>
             <div>Home</div>
             <br />
-            <Link to='/basictypeprops'><button>Basic Type Props</button></Link>
+            <Link to='/basictypeprops'><button>Basic Type Props</button></Link>&#160;&#160;
+            <Link to='/hooks'><button>Hooks</button></Link>
         </>
     )
 }
