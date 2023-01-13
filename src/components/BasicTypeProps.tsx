@@ -8,7 +8,9 @@ import Heading from './Heading';
 import Input from './Input';
 import Oscar from './Oscar';
 import Person from './Person';
+import PersonfromOuterFile from './PersonfromOuterFile';
 import PersonList from './PersonList';
+import PersonListOuter from './PersonListOuter';
 import Status from './Status';
 
 const BasicTypeProps = () => {
@@ -45,6 +47,8 @@ const BasicTypeProps = () => {
             <Person name={personName}/>
             <PersonList names={nameList}/>
             <Status status='loading'/>
+            <PersonfromOuterFile name={personName} />
+            <PersonListOuter names={nameList} />
             <Heading>Placeholder text</Heading>
             <Oscar>
                 <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
