@@ -24,6 +24,7 @@ export const LoggedIn = (props: ContainerProps) => {
             </div>
             <br />
             <div>User is { isLoggedIn ? 'logged in' : 'logged out' }</div>
+            <button></button>
         </div>
     )
 }

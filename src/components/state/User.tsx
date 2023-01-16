@@ -30,6 +30,7 @@ export const User = (props: ContainerProps) => {
             <div>User name is { user?.name}</div>
             <br />
             <div>User email is {user?.email}</div>
+            <button></button>
         </div>
     )
 }

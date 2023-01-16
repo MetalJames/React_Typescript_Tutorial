@@ -28,6 +28,7 @@ export const User = () => {
             <button onClick={handleLogin}>Login</button>
             <div>User name is { user.name}</div>
             <div>User email is {user.email}</div>
+            <button></button>
         </div>
     )
 }

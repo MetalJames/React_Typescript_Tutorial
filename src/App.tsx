@@ -5,8 +5,6 @@ import BasicTypeProps from './components/BasicTypeProps';
 import Home from './components/Home';
 import Hooks from './components/Hooks';
 
-
-
 function App() {
 
   return (
