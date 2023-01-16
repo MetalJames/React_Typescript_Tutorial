@@ -7,7 +7,9 @@ const Home = () => {
             <div>Home</div>
             <br />
             <Link to='/basictypeprops'><button>Basic Type Props</button></Link>&#160;&#160;
-            <Link to='/hooks'><button>Hooks</button></Link>
+            <Link to='/hooks'><button>Hooks</button></Link>&#160;&#160;
+            <Link to='/classcomponent'><button>Class Component</button></Link>&#160;&#160;
+            <Link to='/compgenrestrprop'><button>Component Generic Restricted Props</button></Link>&#160;&#160;
         </>
     )
 }
