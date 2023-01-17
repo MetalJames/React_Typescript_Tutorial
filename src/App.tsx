@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Hooks from './components/Hooks';
 import ClassComponnent from './components/ClassComponent';
 import CompGenRestrProp from './components/CompGenRestrProp';
+import EverythingElse from './components/EverythingElse';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='/hooks' element={<Hooks />} />
             <Route path='/classcomponent' element={<ClassComponnent />} />
             <Route path='/compgenrestrprop' element={<CompGenRestrProp />} />
+            <Route path='/everythingelse' element={<EverythingElse />} />
           </Routes>
       </div>
     </Router>

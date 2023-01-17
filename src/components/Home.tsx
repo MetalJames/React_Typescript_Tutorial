@@ -10,6 +10,7 @@ const Home = () => {
             <Link to='/hooks'><button>Hooks</button></Link>&#160;&#160;
             <Link to='/classcomponent'><button>Class Component</button></Link>&#160;&#160;
             <Link to='/compgenrestrprop'><button>Component Generic Restricted Props</button></Link>&#160;&#160;
+            <Link to='/everythingelse'><button>Everything Else</button></Link>&#160;&#160;
         </>
     )
 }
